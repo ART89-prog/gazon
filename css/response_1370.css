@@ -1,0 +1,19 @@
+@media print, (max-width: 1370px) {
+
+    .swiper-button-prev {
+        left: calc(50% - 650px);
+    }
+    .swiper-button-next {
+        left: calc(50% + 600px);
+    }
+
+    .swiper-button-prev2 {
+        left: calc(50% - 650px);
+    }
+    .swiper-button-next2 {
+        left: calc(50% + 610px);
+    }
+
+
+}
+
