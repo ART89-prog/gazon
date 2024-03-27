@@ -287,7 +287,29 @@
 				<section class="work block">
 					<div class="cont">
 						<div class="work_title title">Наши работы за прошлый год</div>
-
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="images/work1.jpg" alt="">
+									<img src="images/work3.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="images/work2.jpg" alt="">
+									<img src="images/work4.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="images/work1.jpg" alt="">
+									<img src="images/work3.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="images/work2.jpg" alt="">
+									<img src="images/work4.jpg" alt="">
+								</div>
+							</div>	
+						</div>					
+						<div class="swiper-pagination"></div>				
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
 				</section>
 
@@ -457,9 +479,8 @@
 					// Кастомный маркер
 					let myPlacemark = new ymaps.Placemark([55.709591,37.624867], {}, {
 						iconLayout : 'default#image',
-						iconImageHref : 'images/marker.svg',
+						// iconImageHref : 'images/marker.svg',
 						iconImageSize : [43, 50],
-						/*iconImageOffset : [-116, -172]*/
 					})
 	
 					myMap.geoObjects.add(myPlacemark)
