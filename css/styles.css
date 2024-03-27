@@ -306,7 +306,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 center;
-    padding-bottom: 144px;
+    padding-bottom: 140px;
     position: relative;
 }
 header .mob_menu_btn {
@@ -378,7 +378,7 @@ header .menu .item > a {
     text-decoration: none;
 }
 .header_contacts {
-    margin-bottom: 14px;
+    margin-bottom: 23px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -387,9 +387,9 @@ header .menu .item > a {
 .header_contacts-email {
     color: rgb(255, 255, 255);
     font-family: "Unbounded";
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
     text-decoration: none;
     position: relative;
 }
@@ -411,10 +411,9 @@ header .menu .item > a {
 .header_contacts-phone {
     color: rgb(255, 255, 255);
     font-family: "Unbounded";
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 50px;
-    letter-spacing: 0%;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 1.2;
     text-decoration: none;
     position: relative;
 }
@@ -454,7 +453,7 @@ header .menu .item > a {
     z-index: -1;
 }
 .header_bottom {
-    margin-top: 148px;
+    margin-top: 160px;
 }
 .header_title {
     color: rgb(255, 255, 255);
@@ -472,7 +471,7 @@ header .menu .item > a {
     letter-spacing: 0%;   
 }
 .header_calc {
-    margin-top: 100px;
+    margin-top: 104px;
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -563,7 +562,7 @@ header .menu .item > a {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.2;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .product_item-price {
     color: rgb(11, 154, 11);
@@ -648,6 +647,9 @@ header .menu .item > a {
 
 /* service */
 
+.service {
+    padding-bottom: 50px;
+}
 .service_item {
     display: flex;
     justify-content: space-between;
@@ -657,14 +659,13 @@ header .menu .item > a {
     gap: 122px;  
 }
 .service_item:nth-child(2n) {
-    margin-bottom: 58px;
     flex-direction: row-reverse;
     gap: 11px;
 }
 .service_item:nth-child(2n-1) .service_item-box {
     width: calc(100% - 722px);
 }
-.service_item:nth-child(2n-1) .service_item-box {
+.service_item:nth-child(2n) .service_item-box {
     width: calc(100% - 770px);
     margin-left: 12px;
     flex-shrink: 0;
@@ -684,7 +685,7 @@ header .menu .item > a {
     font-size: 20px;
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 34px;
+    margin-bottom: 29px;
 }
 .service_item-img img {
     border-radius: 12px;
@@ -692,14 +693,19 @@ header .menu .item > a {
 }
 .service_item ol,
 .service_item ul {
-    padding-left: 22px;
+    padding-left: 28px;
 }
 .service_item ol li,
 .service_item ul li {
     color: rgb(32, 32, 32);
     font-size: 20px;
     font-weight: 400;
-    line-height: 1.2;   
+    line-height: 1.2; 
+    margin-bottom: 12px;  
+}
+.service_item ol li:last-child,
+.service_item ul li:last-child {
+    margin-bottom: 0;
 }
 .service_item p {
     color: rgb(32, 32, 32);
@@ -708,8 +714,8 @@ header .menu .item > a {
     line-height: 1.2;
 }
 .service_item ul {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
 }
 
 
@@ -717,6 +723,10 @@ header .menu .item > a {
 
 /* step */
 
+.step.block {
+    padding-bottom: 80px;
+    padding-top: 0;
+}
 .step_items {
     display: flex;
     gap: 14px;
@@ -784,7 +794,7 @@ header .menu .item > a {
 
 
 .quote {
-    padding: 24px 131px 24px 157px;
+    padding: 33px 131px 28px 157px;
     background: #1591D8;
     border-radius: 12px;
     position: relative;
@@ -877,7 +887,10 @@ header .menu .item > a {
 }
 .stage_item-title {
     margin-top: 96px;
-
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.11;
 }
 
 
@@ -932,11 +945,11 @@ header .menu .item > a {
     font-size: 32px;
 }
 .contacts_info-text {
-    margin-top: 30px;
+    margin-top: 31px;
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.2;
 }
 .contacts_info-phone {
     color: rgb(255, 255, 255);
@@ -966,7 +979,7 @@ header .menu .item > a {
 .contacts_info-graffik {
     color: rgb(255, 255, 255);
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 24px;
 }
 .contacts_info-graffik b {
@@ -1040,13 +1053,13 @@ footer:before {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 31px;
+    margin-bottom: 23px;
 }
 .footer_menu ul {
     list-style: none;
 }
 .footer_menu ul li + li {
-    margin-top: 21px;
+    margin-top: 24px;
 }
 .footer_menu ul li {    
     position: relative;
@@ -1059,6 +1072,7 @@ footer:before {
     text-decoration: none;
     color: #fff;
     position: relative;
+    padding-left: 8px;
 }
 .footer_menu ul li a:after {
     position: absolute;
@@ -1080,8 +1094,8 @@ footer:before {
     content: "";
     width: 18px;
     height: 19px;
-    left: -5px;
-    top: 4px;
+    left: -2px;
+    top: 3px;
     background: url(../images/arrow.svg);
     display: inline-block;
 }
