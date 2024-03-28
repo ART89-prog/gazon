@@ -4,31 +4,92 @@
         --font_size: 16px;
         --font_size_title: 40px;
     }
-    .about_left {
-        width: 500px;
+    header .mob_menu_btn {
+        display: flex;
+        order: 1;
     }
-    .about_img:nth-child(1) {
-        height: 378px;
-        margin-bottom: 16px;
+    header .menu {
+        position: fixed;
+        z-index: 107;
+        top: 49px;
+        left: 0;
+
+        display: flex;
+        overflow: auto;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0px 20px;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #2A292F;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
     }
-    .about_info {
-        width: calc(100% - 530px);
+    header .menu.show {
+        transform: translateX(0);
     }
-    .block {
-        padding-top: 60px;
-        padding-bottom: 60px;
+    header .close_btn {
+        display: flex;
     }
-    .technology {
-        margin-bottom: 60px;
+    .menu_open header .mob_menu_btn {
+        display: none;
     }
-    .contacts {
-        padding-top: 60px;
+    header .menu .item {
+        width: 100%;
+        margin-right: 0;
     }
-    .service {
-        padding-top: 80px;
-        padding-bottom: 80px;
+    header .menu .item + .item {
+        margin-left: 0;
     }
-    .text p br {
+    header .menu .item > a {
+        display: block;
+        height: auto;
+        padding-bottom: 15px;
+        text-align: center;
+        color: #fff;
+        border-bottom: none;
+    }  
+    .mob_menu_btn span {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 2px;
+        transition: background .2s linear;
+        background: #000; 
+    }
+
+  
+    .menu_open header {
+        background: #2A292F;
+    }
+    header .close_btn {
+        display: none;
+    }
+    .menu_open header .close_btn {
+        display: block;
+        top: 8px;
+        right: 30px;
+    }
+    .mob_menu_btn {
+        width: 45px;
+    }
+    .mob_menu_btn img {
+        width: 24px;
+    }
+    .header_contacts-mob {
+        display: block;
+    }
+    .header_contacts {
         display: none;
     }
    

@@ -1,22 +1,7 @@
 @media print, (max-width: 1300px) {
 
-    .swiper-button-prev {
-        top: calc(100% + 20px);
-        left: calc(50% - 130px);
-        transform: translateY(0px);
-    }
-    .swiper-button-next {
-        left: calc(50% + 80px);
-        top: calc(100% + 20px);
-        transform: translateY(0px);
-    }
-    .swiper-button-prev2 {
-        top: calc(100% + 45px);
-        left: calc(50% - 130px);
-    }
-    .swiper-button-next2 {
-        top: calc(100% + 45px);
-        left: calc(50% + 80px);
+    header .menu .item {
+        margin-right: 30px;
     }
 
 }

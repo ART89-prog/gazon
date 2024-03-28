@@ -484,6 +484,9 @@ header .menu .item > a {
     max-width: 870px;
     display: block;
 }
+.header_contacts-mob {
+    display: none;
+}
 .header_btn {
     text-decoration: none;
     outline: 4px dashed rgb(255, 255, 255);
