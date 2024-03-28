@@ -43,6 +43,17 @@
     .product_item-title {
         font-size: 20px;
     }
+    .banner_title {
+        font-size: 34px;
+    }
+    .banner_text {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .banner_btn {
+        width: 100%;
+        font-size: 18px;
+    }
 
 
     

@@ -98,7 +98,46 @@
     .block {
         padding: 40px 0;
     }
-
+    .banner_wrap {
+        padding: 60px 12px;
+        border-radius: 0;
+        margin-left: -12px;
+        margin-right: -12px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .banner_title {
+        font-size: 44px;
+    }
+    .banner_text br {
+        display: none;
+    }
+    .cont {
+        padding: 0 12px;
+    }
+    .service_item:nth-child(2n-1) .service_item-img {
+        width: 100%;
+        height: auto;
+    }
+    .service_item:nth-child(2n) .service_item-img {
+        width: 100%;
+        height: auto;
+    }
+    .service_text {
+        font-size: 18px;
+    }
+    .service_item ol li, 
+    .service_item ul li,
+    .service_item p {
+        font-size: 16px;
+    }
+    .step_items > * {
+        width: 100%;
+    }
+    .step_items {
+        gap: 10px;
+    }
+    
 
 
 

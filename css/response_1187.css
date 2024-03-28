@@ -94,6 +94,21 @@
         top: 40px;
         right: 40px;
     }
+    .service_title {
+        margin-bottom: 24px;
+    }
+    .service_text {
+        margin-bottom: 20px;
+    }
+    .service_description {
+        margin-bottom: 15px;
+    }
+    .step_items {
+        flex-wrap: wrap;
+    }
+    .step_items > * {
+        width: calc(100% / 2 - 10px);
+    }
 
    
 

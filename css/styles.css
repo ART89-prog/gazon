@@ -643,7 +643,7 @@ header .menu .item > a {
     color: rgb(255, 255, 255);
     font-size: var(--font_size_title);
     font-weight: 600;
-    line-height: 50px;
+    line-height: 1.3;
     margin-bottom: 48px;
 }
 .banner_btn {
@@ -711,9 +711,19 @@ header .menu .item > a {
     line-height: 1.2;
     margin-bottom: 29px;
 }
+.service_item:nth-child(2n-1) .service_item-img {
+    width: 600px;
+    height: 450px;
+}
+.service_item:nth-child(2n) .service_item-img  {
+    width: 758px;
+    height: 531px;
+}
 .service_item-img img {
     border-radius: 12px;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 .service_item ol,
 .service_item ul {
@@ -829,6 +839,7 @@ header .menu .item > a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 12px;
 }
 .quote {
     padding: 33px 131px 28px 157px;

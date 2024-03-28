@@ -1,6 +1,8 @@
 @media print, (max-width: 1300px) {
 
-
+    :root {
+        --font_size_title: 36px;
+    }   
     .header_title {
         font-size: 100px;
         padding-top: 220px;
@@ -20,6 +22,25 @@
     }
     .header_btn {
         width: 420px;
+    }
+    .service_item-img {
+        width: 480px;
+        height: 360px;
+    }
+    .service_item:nth-child(2n) .service_item-img  {
+        width: 538px;
+        height: 377px;
+    }
+    .service_item:nth-child(2n-1) {
+        margin-bottom: 40px;
+        gap: 30px;
+    }
+    .service_item:nth-child(2n-1) .service_item-box {
+        width: calc(100% - 510px);
+    }
+    .service_item:nth-child(2n) .service_item-box {
+        width: calc(100% - 560px);
+        flex-shrink: 0;
     }
 
 
