@@ -42,6 +42,10 @@
         width: calc(100% - 560px);
         flex-shrink: 0;
     }
+    .step_banner {
+        padding: 24px;
+        gap: 15px;
+    }
 
 
 

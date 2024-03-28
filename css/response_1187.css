@@ -109,6 +109,12 @@
     .step_items > * {
         width: calc(100% / 2 - 10px);
     }
+    .quote {
+        padding: 33px 31px 28px 157px;
+    }
+    .quote_btn {
+        right: 31px;
+    }
 
    
 

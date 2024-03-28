@@ -54,6 +54,33 @@
         width: 100%;
         font-size: 18px;
     }
+    .step_banner-text {
+        font-size: 20px;
+    }
+    .step_banner-btn {
+        font-size: 18px;
+    }
+    .quote_btn {
+        width: 100%;
+    }
+    .stage_items {
+        gap: 12px;
+    }
+    .stage_items > * {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .stage_item:nth-child(3n + 2) {
+        margin-bottom: 0px;
+    }
+    .contacts_info-logo span b,
+    .contacts_info-text,
+    .contacts_info-phone,
+    .contacts_info-logo,
+    .contacts_info-graffik,
+    .contacts_info-text {
+        font-size: 16px;
+    }
 
 
     
