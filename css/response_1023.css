@@ -5,6 +5,28 @@
         --font_size_title: 36px;
     }   
 
+    .modal {
+        padding: 60px 30px 30px;
+    }
+    .fancybox__content>.carousel__button.is-close {
+        top: 30px;
+        right: 30px;
+    }
+    .modal_title {
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .modal_wrap {
+        flex-direction: column;
+    }
+    .modal_info-title {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+    .modal_info ul li {
+        font-size: 18px;
+    }
 
    
 

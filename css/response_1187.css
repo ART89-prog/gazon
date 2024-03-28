@@ -89,6 +89,15 @@
     .header_contacts-email {
         margin-top: 15px;
     }
+
+    .modal {
+        padding: 40px;
+    }
+    .fancybox__content>.carousel__button.is-close {
+        top: 40px;
+        right: 40px;
+    }
+
    
 
 

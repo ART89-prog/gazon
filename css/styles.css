@@ -1408,11 +1408,12 @@ footer:before {
 
 
 .modal {
-    padding: 60px 80px;
+    padding: 60px 138px 60px 80px;
     background: #FFAB48;
     border: 6px dashed #945812;
     border-radius: 24px;
     width: 100%;
+    max-width: 1440px;
 }
 .modal_title {
     font-weight: 700;
@@ -1435,6 +1436,7 @@ footer:before {
     line-height: 1.2;
     color: #FFFFFF;
     margin-bottom: 24px;
+    max-width: 800px;
 }
 .modal_info ul {
     padding-left: 26px;
@@ -1448,17 +1450,89 @@ footer:before {
 }
 .modal form .line {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap; 
+    gap: 20px;
+    width: calc(100% - 147px);  
 }
-.modal form .line .field {
-    max-width: 360px;
-    width: 100%;
-    margin-right: 20px;
+.modal form {
+    display: flex;
+    gap: 20px;
 }
-.modal form .line button {
+.modal form .line .field {    
+    width: calc(100%/2 - 10px);  
+}
+.modal form button {
     width: 147px;
     height: 48px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    border: 1px solid rgb(0, 133, 0);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    background: rgb(0, 133, 0);
+    transition: all .4s;
+}
+.modal form button:hover {
+    background: #fff;
+    color: rgb(0, 133, 0);
 }
 .modal form .line .field input {
     width: 100%;
+    height: 48px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: rgb(255, 255, 255);
+    background: transparent;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 0 20px;
+}
+.modal form .line .field input::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.modal form .line .field input::-moz-placeholder {
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.modal form .line .field input:-moz-placeholder {
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.modal form .line .field input:-ms-input-placeholder {
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.fancybox__content>.carousel__button.is-close {
+    top: 60px;
+    right: 80px;
+}
+.modal_img {
+    width: 289px;
+    height: 435px;
+    flex-shrink: 0;
+}
+.modal_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
