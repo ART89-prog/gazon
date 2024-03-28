@@ -118,20 +118,25 @@ $(() => {
 
 
   const swiper2 = new Swiper('.text-block .swiper', {
-    slidesPerView: 2,
-    spaceBetween: 40,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 0
       },
       480: {
         slidesPerView: 1,
-        spaceBetween: 30
+        spaceBetween: 0
       },
       640: {
-        slidesPerView: 2,
-        spaceBetween: 40
+        slidesPerView: 1,
+        spaceBetween: 0
       }
     }
   })

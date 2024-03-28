@@ -124,7 +124,7 @@ input[type=number]
 :root {
     --bg: #fff;
     --scroll_width: 17px;
-    --text_color: #3f404a;
+    --text_color: #202020;
     --text_color2: #fff;
     --font_size: 16px;
     --font_size_title: 48px;
@@ -500,27 +500,21 @@ header .menu .item > a {
 .header_btn {
     text-decoration: none;
     outline: 4px dashed rgb(255, 255, 255);
+    outline-offset: 10px;
     border-radius: 12px; 
-    width: 564px;
-    height: 109px;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}  
-.header_btn span {
-    margin: 0 10px;
-    height: 89px;
-    width: 520px;
+    width: 544px;
+    height: 89px;      
     background: #fff;      
     color: rgb(11, 154, 11);
     font-size: 32px;
     font-weight: 700;
     line-height: 89px;
-    letter-spacing: 0%;
-    display: block;
-    border-radius: 12px;   
+    letter-spacing: 0%; 
     transition: all .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }  
 .header_btn:hover span {
     background: #0B9A0B;
@@ -1163,5 +1157,177 @@ footer:before {
 
 .page header {
     background: none;
+}
+.checkbox label {
+    font-size: 14px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #1b1e1f;
+    color: #BD9A97;
+    display: inline-block;
+    font-family: inherit;
+    position: relative;
+    padding-left: 32px;
+    cursor: pointer;
+}
+.custom-checkbox + label:before {
+    width: 26px;
+    height: 26px;
+    border: 1px solid #d9dfe2;
+    border-radius: 4px;
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 3px;
+    background: #fff;
+}
+.custom-checkbox:checked + label:after {
+    border-bottom: 3px solid #85b414;
+    border-left: 3px solid #85b414;
+    width: 14px;
+    height: 8px;
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 10px;
+    transform: rotate(-45deg);
+}
+.text-block_title {
+    font-size: 62px;
+    margin-bottom: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.text-block .swiper-slide img {
+    border-radius: 12px;
+    width: 100%;
+}
+.text-block .swiper-horizontal > .swiper-pagination-bullets, 
+.text-block .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.text-block .swiper-pagination-custom, 
+.text-block .swiper-pagination-fraction {
+    bottom: 45px;
+    right: 45px;
+    left: auto;
+    justify-content: flex-end;
+}
+.text-block .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: none;
+}
+.text-block .swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 24px !important;
+}
+.text-block .swiper-pagination-bullet-active {
+    width: 14px;
+    height: 14px;
+    outline: 1px solid #fff;
+    outline-offset: 1px;
+}
+.text-block .swiper {
+    margin-bottom: 36px;
+}
+.text-block h3 {
+    font-size: 48px;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    font-weight: 700;   
+}
+.text-block p {
+    font-size: 20px;
+    margin-bottom: 26px;
+    line-height: 1.2;
+    font-weight: 400;   
+}
+.text-block .step_banner {
+    margin-bottom: 36px;
+}
+.text-block b {
+    font-size: 20px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    display: block;
+}
+.text-block ol,
+.text-block ul {
+    padding-left: 22px;
+    margin-bottom: 16px;
+}
+.text-block ol li,
+.text-block ul li {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;   
+}
+.text-block img {
+    float: right;
+    margin-left: 20px;
+}
+.text-block p a {
+    color: rgb(65, 163, 235);
+    text-decoration: none;
+}
+.text-block_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    width: 245px;
+    height: 61px;
+    background: #0B9A0B;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    text-decoration: none;
+    color: #fff;
+    margin: 32px auto 0;
+}
+.text-block_btn .icon {
+    width: 28px;
+    height: 28px;
+    float: none;
+    margin-left: 5px;
+}
+
+.callback {
+}
+.block {
+}
+.cont {
+}
+.callback_wrap {
+    display: flex;
+    gap: 22px;
+}
+.callback_form {
+    width: calc(100% - 800px);
+}
+.callback_title {
+}
+.callback_text {
+}
+.line {
+}
+.checkbox {
+}
+.custom-checkbox {
+}
+.form_agree-text {
+}
+.callback_img {
+    width: 788px;
+    height: 564px;
+}
+.callback_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
