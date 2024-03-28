@@ -1,8 +1,8 @@
 @media print, (max-width: 1023px) {
  
     :root {
-        --font_size: 16px;
-        --font_size_title: 36px;
+        --font_size: 18px;
+        --font_size_title: 32px;
     }   
 
     .modal {
@@ -26,6 +26,26 @@
     }
     .modal_info ul li {
         font-size: 18px;
+    }
+    .header_title {
+        font-size: 75px;
+        padding-top: 170px;
+    }
+    .header_text {
+        font-size: 30px;
+    }
+    .header_calc {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .product_item {
+        padding: 12px;
+        width: 100%;
+    }
+    .product_item:nth-child(5), 
+    .product_item:nth-child(6), 
+    .product_item:nth-child(7) {
+        width: 100%;
     }
 
    

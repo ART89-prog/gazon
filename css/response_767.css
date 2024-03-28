@@ -1,8 +1,8 @@
 @media print, (max-width: 767px) {
 
     :root {
-        --font_size: 15px;
-        --font_size_title: 36px;
+        --font_size: 18px;
+        --font_size_title: 28px;
     }
     .header_logo {
         width: 137px;
@@ -11,10 +11,10 @@
     .header_logo img {
         width: 100%;
     }
-    .header_bottom {
-        margin-top: 82px;
-    }
     header .menu {
+        top: 84px;
+    }
+    header .menu.show {
         top: 84px;
     }
     .header_top {
@@ -44,7 +44,7 @@
         right: 20px;
     }
     .modal_title {
-        font-size: 28px;
+        font-size: 32px;
         margin-bottom: 16px;
     }
     .modal_info-title {
@@ -71,6 +71,34 @@
     .modal form button {
         width: 100%;
     }
+    .header_title {
+        font-size: 46px;
+        padding-top: 130px;
+        text-align: center;
+    }
+    .header_text {
+        font-size: 24px;
+        text-align: center;
+    }
+    .header_calc {
+        margin-top: 20px;
+    }
+    .header_calc b {
+        font-size: 24px;
+        text-align: center;        
+    }
+    .header_btn {
+        width: 404px;
+        height: 60px;
+        background: #fff;
+        font-size: 24px;
+        line-height: 60px;
+        margin: 0 auto;
+    }
+    .block {
+        padding: 40px 0;
+    }
+
 
 
 

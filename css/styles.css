@@ -125,8 +125,7 @@ input[type=number]
     --bg: #fff;
     --scroll_width: 17px;
     --text_color: #202020;
-    --text_color2: #fff;
-    --font_size: 16px;
+    --font_size: 20px;
     --font_size_title: 48px;
     --font_family: "Montserrat", sans-serif;
 }
@@ -321,15 +320,41 @@ header .mob_menu_btn {
     flex-wrap: wrap;
     z-index: 8;
 }
-.header_top-fixed {
+
+.header_top {
     position: fixed;
     z-index: 1000;
+    padding: 27px 0;
     top: 0;
     width: 100%;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.84);
-    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.06);
-    backdrop-filter: blur(6px);
+    /* max-width: calc(100% - 40px); */
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_top:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 2000px);
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background: rgba(0, 133, 0, 0.62);
+    z-index: -1;
+}
+.header_fixed .header_top {
+    background: rgba(0, 133, 0);
+}
+.header_fixed .header_top:before {
+    background: rgba(0, 133, 0);
+}
+header .menu .item {
+    margin-left: 30px;
+}
+header .menu .item:first-child {
+    margin-left: 0;
 }
 header .mob_menu_btn .icon {
     display: block;
@@ -350,7 +375,6 @@ header .menu {
     display: flex;
 }
 header .menu .item {
-    margin-right: 40px;
     position: relative;
 }
 header .menu .item:after {
@@ -372,7 +396,7 @@ header .menu .item:last-child {
     margin-right: 0;
 }
 header .menu .item > a {
-    font-size: 20px;
+    font-size: var(--font_size);
     line-height: 1.2;
     font-weight: 600;
     color: #ffffff;
@@ -442,26 +466,6 @@ header .menu .item > a {
 .header_contacts-phone:hover:after {
     width: 100%;
 }
-.header_top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
-    padding: 27px 0;
-}
-.header_top:before {
-    position: absolute;
-    content: "";
-    width: calc(100% + 2000px);
-    height: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-    background: rgba(0, 133, 0, 0.62);
-    backdrop-filter: blur(6px);
-    z-index: -1;
-}
 .header_bottom {
     margin-top: 160px;
 }
@@ -470,12 +474,13 @@ header .menu .item > a {
     font-size: 157px;
     font-weight: 900;
     line-height: 138px;
-    letter-spacing: -3px;   
+    letter-spacing: -3px; 
+    padding-top: 304px;  
 }
 .header_text {
     margin-top: 12px;
     color: rgb(255, 255, 255);
-    font-size: 48px;
+    font-size: var(--font_size_title);
     font-weight: 600;
     line-height: 62px;
     letter-spacing: 0%;   
@@ -484,7 +489,7 @@ header .menu .item > a {
     margin-top: 104px;
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 30px;
 }
 .header_calc b {
     color: rgb(255, 255, 255);
@@ -515,33 +520,17 @@ header .menu .item > a {
     align-items: center;
     justify-content: center;
     text-align: center;
+    white-space: nowrap;
+    flex-shrink: 0;
 }  
-.header_btn:hover span {
+.header_btn:hover {
     background: #0B9A0B;
     color: #fff;
 }
-.header_top {
-    position: fixed;
-    top: 0;
-    width: calc(100% - 40px);
-}
-.header_title {
-    padding-top: 70px;
-}
 .header_bottom {
-    margin-top: 129px;
+    margin-top: 0px;
 }
-.header_top:before {
-    position: absolute;
-    content: "";
-    width: calc(100% + 2000px);
-    height: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-    background: #008500;
-    z-index: -1;
-}
+
 
 
 /* product */
@@ -552,9 +541,9 @@ header .menu .item > a {
 .title {
     margin-bottom: 24px;
     color: rgb(32, 32, 32);
-    font-size: 48px;
+    font-size: var(--font_size_title);
     font-weight: 700;
-    line-height: 59px;
+    line-height: 1.2;
     letter-spacing: 0px;
 }
 .product_items {
@@ -576,8 +565,12 @@ header .menu .item > a {
 .product_item:nth-child(7) {
     width: calc(100%/3 - 20px);
 }
+.product_item-img {
+    height: 260px;
+}
 .product_item-img img {
     width: 100%;
+    height: 100%;
     border-radius: 12px;
     object-fit: cover;
 }
@@ -590,7 +583,7 @@ header .menu .item > a {
 }
 .product_item-text {
     color: rgb(94, 94, 94);
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 400;
     line-height: 1.2;
     margin-top: 5px;
@@ -598,7 +591,7 @@ header .menu .item > a {
 .product_item-price {
     color: rgb(11, 154, 11);
     margin-top: 10px;
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 900;
     line-height: 1.2;
 }
@@ -648,7 +641,7 @@ header .menu .item > a {
 }
 .banner_text {
     color: rgb(255, 255, 255);
-    font-size: 48px;
+    font-size: var(--font_size_title);
     font-weight: 600;
     line-height: 50px;
     margin-bottom: 48px;
@@ -713,7 +706,7 @@ header .menu .item > a {
 }
 .service_description {
     color: rgb(32, 32, 32);
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 29px;
@@ -729,7 +722,7 @@ header .menu .item > a {
 .service_item ol li,
 .service_item ul li {
     color: rgb(32, 32, 32);
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 400;
     line-height: 1.2; 
     margin-bottom: 12px;  
@@ -740,7 +733,7 @@ header .menu .item > a {
 }
 .service_item p {
     color: rgb(32, 32, 32);
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 400;
     line-height: 1.2;
 }
@@ -769,7 +762,13 @@ header .menu .item > a {
     background: rgb(255, 255, 255);
     width: calc(100%/4 - 10px);
 }
+.step_item-img {
+    height: 260px;
+}
 .step_item-img  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 12px;
 }
 .step_item-title {
@@ -781,7 +780,7 @@ header .menu .item > a {
 }
 .step_item-text {
     color: rgb(94, 94, 94);
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 400;
     margin-top: 10px;
     line-height: 1.2;
@@ -823,14 +822,21 @@ header .menu .item > a {
 
 
 
-
+.watery_img {
+    height: 500px;
+}
+.watery_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .quote {
     padding: 33px 131px 28px 157px;
     background: #1591D8;
     border-radius: 12px;
     position: relative;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 700;
     line-height: 1.2;
     margin-top: 30px;
@@ -886,6 +892,30 @@ header .menu .item > a {
 .work .swiper-slide img {
     border-radius: 12px;
     width: 100%;
+}
+.work .swiper-horizontal > .swiper-pagination-bullets, 
+.work .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.work .swiper-pagination-custom, 
+.work .swiper-pagination-fraction {
+    bottom: -35px;
+    right: 20px;
+    left: auto;
+    justify-content: flex-end;
+}
+.work .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background: #008500;
+    border: none;
+}
+.work .swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 24px !important;
+}
+.work .swiper-pagination-bullet-active {
+    width: 14px;
+    height: 14px;
+    outline: 1px solid #008500;
+    outline-offset: 1px;
 }
 
 
@@ -990,13 +1020,13 @@ header .menu .item > a {
 .contacts_info-text {
     margin-top: 31px;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 700;
     line-height: 1.2;
 }
 .contacts_info-phone {
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 700;
     line-height: 24px;
     display: block;
@@ -1009,7 +1039,7 @@ header .menu .item > a {
 }
 .contacts_info-email {
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 700;
     line-height: 24px;
     display: block;
@@ -1021,7 +1051,7 @@ header .menu .item > a {
 }
 .contacts_info-graffik {
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 400;
     line-height: 24px;
 }
@@ -1059,18 +1089,18 @@ footer:before {
     margin-bottom: 24px;
 }
 .footer_text {
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 50px;
 }
 .footer_graffik {
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 700;
     line-height: 24px;
 }
 .footer_email {
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 700;
     line-height: 24px;
     margin-bottom: 4px;
@@ -1107,7 +1137,7 @@ footer:before {
 .footer_menu ul li {    
     position: relative;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: var(--font_size);
     font-weight: 500;
     line-height: 2;
 }
@@ -1226,13 +1256,13 @@ footer:before {
     margin-bottom: 36px;
 }
 .text-block h3 {
-    font-size: 48px;
+    font-size: var(--font_size_title);
     margin-bottom: 24px;
     line-height: 1.2;
     font-weight: 700;   
 }
 .text-block p {
-    font-size: 20px;
+    font-size: var(--font_size);
     margin-bottom: 26px;
     line-height: 1.2;
     font-weight: 400;   
@@ -1241,7 +1271,7 @@ footer:before {
     margin-bottom: 36px;
 }
 .text-block b {
-    font-size: 20px;
+    font-size: var(--font_size);
     margin-bottom: 16px;
     line-height: 1.2;
     font-weight: 700;
@@ -1254,7 +1284,7 @@ footer:before {
 }
 .text-block ol li,
 .text-block ul li {
-    font-size: 20px;
+    font-size: var(--font_size);
     line-height: 1.2;
     font-weight: 400;   
 }
@@ -1328,35 +1358,35 @@ footer:before {
     background: #F2FAF2;
     border-radius: 6px;
     border: none;
-    font-family: 'Montserrat';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
     color: #000;
 }
 .callback .line .field input::-webkit-input-placeholder {
-    font-family: 'Montserrat';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
     color: #2C332D;
 }
 .callback .line .field input::-moz-placeholder {
-    font-family: 'Montserrat';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
     color: #2C332D;
 }
 .callback .line .field input:-moz-placeholder {
-    font-family: 'Montserrat';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
     color: #2C332D;
 }
 .callback .line .field input:-ms-input-placeholder {
-    font-family: 'Montserrat';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
@@ -1367,14 +1397,14 @@ footer:before {
     align-items: center;
 }
 .form_agree-text {
-    font-family: 'Montserrat';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
     color: #000000;    
 }
 .form_agree-text a {
-    font-family: 'Montserrat';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
@@ -1396,7 +1426,7 @@ footer:before {
     height: 69px;
     background: #0B9A0B;
     border-radius: 6px;
-    font-family: 'Montserrat';
+    font-family: var(--font_family);
     font-weight: 700;
     font-size: 24px;
     line-height: 69px;
@@ -1432,7 +1462,7 @@ footer:before {
 }
 .modal_info-title {
     font-weight: 700;
-    font-size: 48px;
+    font-size: var(--font_size_title);
     line-height: 1.2;
     color: #FFFFFF;
     margin-bottom: 24px;
@@ -1444,7 +1474,7 @@ footer:before {
 }
 .modal_info ul li {
     font-weight: 700;
-    font-size: 20px;
+    font-size: var(--font_size);
     line-height: 1.2;
     color: #FFFFFF;
 }
@@ -1466,7 +1496,7 @@ footer:before {
     height: 48px;
     border-radius: 8px;
     color: rgb(255, 255, 255);
-    font-family: Montserrat;
+    font-family: var(--font_family);
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
@@ -1487,7 +1517,7 @@ footer:before {
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
     color: rgb(255, 255, 255);
     background: transparent;
-    font-family: "Montserrat";
+    font-family: var(--font_family);
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
@@ -1495,28 +1525,28 @@ footer:before {
 }
 .modal form .line .field input::-webkit-input-placeholder {
     color: rgb(255, 255, 255);
-    font-family: "Montserrat";
+    font-family: var(--font_family);
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
 }
 .modal form .line .field input::-moz-placeholder {
     color: rgb(255, 255, 255);
-    font-family: "Montserrat";
+    font-family: var(--font_family);
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
 }
 .modal form .line .field input:-moz-placeholder {
     color: rgb(255, 255, 255);
-    font-family: "Montserrat";
+    font-family: var(--font_family);
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
 }
 .modal form .line .field input:-ms-input-placeholder {
     color: rgb(255, 255, 255);
-    font-family: "Montserrat";
+    font-family: var(--font_family);
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
