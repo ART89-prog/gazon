@@ -1334,6 +1334,10 @@ footer:before {
     text-decoration: none;
     color: #fff;
     margin: 32px auto 0;
+    transition: all .4s;
+}
+.text-block_btn:hover {
+    background: #056c05;
 }
 .text-block_btn .icon {
     width: 28px;
@@ -1454,6 +1458,10 @@ footer:before {
     text-align: center;
     color: #FFFFFF;
     margin-top: 26px;
+    transition: all .4s;
+}
+.callback button:hover {
+    background: #056c05;
 }
 
 
