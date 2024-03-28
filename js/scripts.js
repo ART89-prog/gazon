@@ -61,11 +61,11 @@ $(() => {
 		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
 	}
 
-	// Fancybox.defaults.template = {
-	// 	closeButton: '<img src=../images/close.png>',
+	Fancybox.defaults.template = {
+		closeButton: '<img src=../images/close.png>',
 	// 	spinner: '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="25 25 50 50" tabindex="-1"><circle cx="50" cy="50" r="20"/></svg>',
 	// 	main: null
-	// }
+	}
 
 
 

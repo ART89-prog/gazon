@@ -1405,3 +1405,60 @@ footer:before {
     margin-top: 26px;
 }
 
+
+
+.modal {
+    padding: 60px 80px;
+    background: #FFAB48;
+    border: 6px dashed #945812;
+    border-radius: 24px;
+    width: 100%;
+}
+.modal_title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.fancybox__slide {
+    padding: 20px;
+}
+.modal_wrap {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+.modal_info-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.modal_info ul {
+    padding-left: 26px;
+    margin-bottom: 25px;
+}
+.modal_info ul li {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+.modal form .line {
+    display: flex;
+    flex-wrap: wrap;    
+}
+.modal form .line .field {
+    max-width: 360px;
+    width: 100%;
+    margin-right: 20px;
+}
+.modal form .line button {
+    width: 147px;
+    height: 48px;
+}
+.modal form .line .field input {
+    width: 100%;
+}
