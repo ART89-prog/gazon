@@ -108,7 +108,9 @@
     .callback_title {
         font-size: 32px;
     }
-    
+    .work .swiper-slide img + img {
+        margin-top: 20px;
+    }
 
 
    

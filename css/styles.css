@@ -911,7 +911,6 @@ header .menu .item > a {
 .work .swiper-pagination-fraction {
     bottom: -35px;
     right: 20px;
-    left: auto;
     justify-content: flex-end;
 }
 .work .swiper-pagination-bullet {

@@ -229,6 +229,33 @@
     .text-block_title {
         font-size: 32px;
     }
+    .work .swiper-horizontal > .swiper-pagination-bullets, 
+    .work .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .work .swiper-pagination-custom, .work .swiper-pagination-fraction {
+        bottom: -25px;
+        right: 50%;
+        transform: translateX(50%);
+        justify-content: center;
+    }
+    .work.block {
+        padding-bottom: 64px;
+    }    
+    .work .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: #CFFACE;
+    }
+    .work .swiper-pagination-bullet-active {
+        width: 32px;
+        height: 12px;
+        outline: none;
+        outline-offset: 0px;
+        border-radius: 500px;
+        background: #0B9A0B;
+    }
+    .work .swiper-pagination-bullet + .swiper-pagination-bullet {
+        margin-left: 10px !important;
+    }
 
 
 
