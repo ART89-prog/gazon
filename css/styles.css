@@ -476,12 +476,13 @@ header .menu .item > a {
     align-items: flex-start;
     gap: 20px;
 }
-.header_calc span {
+.header_calc b {
     color: rgb(255, 255, 255);
     font-size: 40px;
     font-weight: 700;
-    line-height: 49px;
-    letter-spacing: 0%;   
+    line-height: 1.225; 
+    max-width: 870px;
+    display: block;
 }
 .header_btn {
     text-decoration: none;
@@ -495,8 +496,9 @@ header .menu .item > a {
     text-align: center;
 }  
 .header_btn span {
+    margin: 0 10px;
     height: 89px;
-    width: 544px;
+    width: 520px;
     background: #fff;      
     color: rgb(11, 154, 11);
     font-size: 32px;
