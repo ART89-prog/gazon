@@ -250,7 +250,7 @@ img {
 
 .overlay {
     position: fixed;
-    z-index: 102;
+    z-index: 1;
     top: 0;
     left: 0;
 
@@ -311,8 +311,8 @@ header {
 }
 header .mob_menu_btn {
     display: none;
-    width: 30px;
-    height: 28px;
+    width: 40px;
+    height: 23px;
     margin-right: 0px;
     margin-left: auto;
     justify-content: center;
@@ -320,6 +320,16 @@ header .mob_menu_btn {
     align-content: center;
     flex-wrap: wrap;
     z-index: 8;
+}
+.header_top-fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.84);
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(6px);
 }
 header .mob_menu_btn .icon {
     display: block;
@@ -515,6 +525,28 @@ header .menu .item > a {
 .header_btn:hover span {
     background: #0B9A0B;
     color: #fff;
+}
+.header_top {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 40px);
+}
+.header_title {
+    padding-top: 70px;
+}
+.header_bottom {
+    margin-top: 129px;
+}
+.header_top:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 2000px);
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background: #008500;
+    z-index: -1;
 }
 
 
@@ -1127,5 +1159,9 @@ footer:before {
 }
 .fancybox__content>.carousel__button.is-close:hover {
     color: var(--fancybox-color, #92b0ab);
+}
+
+.page header {
+    background: none;
 }
 

@@ -28,6 +28,15 @@ $(() => {
     })
 
 
+    let header = $('header_top');
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 1) {
+        header.addClass('header_top-fixed');
+      } else {
+        header.removeClass('header_top-fixed');
+      }
+    });
+
 
     $('body').on('click', '.modal_link', function (e) {
       e.preventDefault()
@@ -89,6 +98,26 @@ $(() => {
 
 
   const swiper = new Swiper('.work .swiper', {
+    slidesPerView: 2,
+    spaceBetween: 40,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      }
+    }
+  })
+
+
+  const swiper2 = new Swiper('.text-block .swiper', {
     slidesPerView: 2,
     spaceBetween: 40,
     breakpoints: {

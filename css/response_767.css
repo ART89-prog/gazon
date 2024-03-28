@@ -4,6 +4,39 @@
         --font_size: 15px;
         --font_size_title: 36px;
     }
+    .header_logo {
+        width: 137px;
+        height: 35px;
+    }
+    .header_logo img {
+        width: 100%;
+    }
+    .header_bottom {
+        margin-top: 82px;
+    }
+    header .menu {
+        top: 84px;
+    }
+    .header_top {
+        padding: 24px 0;
+    }
+    .footer_wrap {
+        flex-direction: column-reverse;
+    }
+    .footer_title {
+        font-size: 24px;
+    }
+    .footer_info {
+        margin-top: 24px;
+    }
+    .footer_text {
+        margin-bottom: 12px;
+    }
+    .footer_phone {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
 
 
 

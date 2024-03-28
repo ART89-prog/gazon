@@ -1,8 +1,31 @@
 @media print, (max-width: 1300px) {
 
     header .menu .item {
-        margin-right: 30px;
+        margin-right: 0px;
+        margin-left: 30px;
     }
+    header .menu .item:first-child {
+        margin-left: 0;
+    }
+    .header_title {
+        font-size: 100px;
+    }
+    .header_text {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+    .header_calc {
+        margin-top: 65px;
+    }
+    .header_calc b {
+        font-size: 32px;
+    }
+    .banner_wrap {
+        padding: 170px 40px 40px;
+    }
+
+
+
 
 }
 
