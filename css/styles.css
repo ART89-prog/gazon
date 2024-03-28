@@ -1159,37 +1159,33 @@ footer:before {
     background: none;
 }
 .checkbox label {
-    font-size: 14px;
-    line-height: 35px;
-    font-weight: 400;
-    color: #1b1e1f;
-    color: #BD9A97;
     display: inline-block;
     font-family: inherit;
     position: relative;
-    padding-left: 32px;
+    padding-left: 34px;
     cursor: pointer;
+    line-height: 24px;
 }
 .custom-checkbox + label:before {
-    width: 26px;
-    height: 26px;
-    border: 1px solid #d9dfe2;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #0B9A0B;
     border-radius: 4px;
     content: "";
     position: absolute;
-    left: -7px;
-    top: 3px;
+    left: 0px;
+    top: 0px;
     background: #fff;
 }
 .custom-checkbox:checked + label:after {
-    border-bottom: 3px solid #85b414;
-    border-left: 3px solid #85b414;
+    border-bottom: 3px solid #0B9A0B;
+    border-left: 3px solid #0B9A0B;
     width: 14px;
     height: 8px;
     content: "";
     position: absolute;
-    left: -1px;
-    top: 10px;
+    left: 5px;
+    top: 6px;
     transform: rotate(-45deg);
 }
 .text-block_title {
@@ -1298,10 +1294,11 @@ footer:before {
 
 .callback_wrap {
     display: flex;
-    gap: 32px;
+    align-items: center;
+    gap: 12px;
 }
 .callback_form {
-    width: calc(100% - 810px);
+    width: calc(100% - 800px);
 }
 .callback_title {
     font-weight: 800;
@@ -1335,7 +1332,7 @@ footer:before {
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
-    color: #2C332D;
+    color: #000;
 }
 .callback .line .field input::-webkit-input-placeholder {
     font-family: 'Montserrat';
@@ -1366,15 +1363,23 @@ footer:before {
     color: #2C332D;
 }
 .checkbox {
-}
-.custom-checkbox {
+    display: flex;
+    align-items: center;
 }
 .form_agree-text {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
-    color: #000000;
+    color: #000000;    
+}
+.form_agree-text a {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: rgb(11, 154, 11);  
+    text-decoration: none;    
 }
 .callback_img {
     width: 788px;
@@ -1385,5 +1390,18 @@ footer:before {
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
+}
+.callback button {
+    width: 100%;
+    height: 69px;
+    background: #0B9A0B;
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 69px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 26px;
 }
 
