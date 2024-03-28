@@ -46,6 +46,9 @@
         padding: 24px;
         gap: 15px;
     }
+    .text-block_title {
+        font-size: var(--font_size_title);
+    }
 
 
 

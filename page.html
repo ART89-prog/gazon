@@ -34,7 +34,7 @@
 		
 		<link rel="stylesheet" href="css/styles.css">
 
-		<link rel="stylesheet" href="css/response_1470.css" media="print, (max-width: 1440px)">
+		<link rel="stylesheet" href="css/response_1470.css" media="print, (max-width: 1470px)">
 		<link rel="stylesheet" href="css/response_1300.css" media="print, (max-width: 1300px)">
 		<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
@@ -59,7 +59,10 @@
 								<nav class="menu">						
 									
 									<div class="item">
-										<a href="#contacts" class="scroll">Контакты</a>
+										<a href="index.html">
+											На главную
+											<img src="images/arrow.svg" alt="">
+										</a>
 									</div>	
 									<div class="header_contacts-mob">
 										<a href="mailto:zakaz@grassrolls.ru" class="header_contacts-email">zakaz@grassrolls.ru</a>
@@ -163,7 +166,7 @@
 								</form>
 							</div>
 							<div class="callback_img">
-								<img src="images/form_img.jpg" alt="">
+								<img data-src="images/form_img.jpg" alt="" class="lozad">
 							</div>
 						</div>
 					</div>
@@ -205,53 +208,7 @@
 		</div>
 
 
-		<section class="modal_callback" id="modal_callback" style="display: none;">
-			<form>
-				<div class="modal_callback-title">Сделать заказ</div>
-				<div class="line">
-					<div class="field">
-						<label for="name">Имя</label>
-						<input type="text" id="name">
-					</div>
-				</div>
-				<div class="line">
-					<div class="field">
-						<label for="phone">Телефон</label>
-						<input type="tel" id="phone">
-					</div>
-				</div>
-				<div class="line">
-					<div class="field">
-						<label for="email">E-mail</label>
-						<input type="email" id="email">
-					</div>
-				</div>
-				<div class="line">
-					<div class="field">
-						<label for="select">Выберите услугу</label>
-						<select id="select">
-							<option value="1">Витраж дверей шкафов купе</option>
-							<option value="2">Витраж ниш и перегородок</option>
-							<option value="3">Витраж кухонных фасадов</option>
-							<option value="4">Витраж окон</option>
-							<option value="5">Витраж потолков</option>
-							<option value="6">Витраж вставок в двери</option>
-							<option value="7">Витраж зеркал и стеклянных столов</option>
-							<option value="8">Витраж декоративных панно и картин</option>
-						</select>
-					</div>
-				</div>
-				<div class="line">
-					<div class="field">
-						<label for="textarea">Дополнительный текст</label>
-						<textarea id="textarea"></textarea>
-					</div>
-				</div>
-				<button>
-					<span>Отправить сообщение</span>
-				</button>
-			</form>
-		</section>
+		
 
 		
 

@@ -1200,6 +1200,15 @@ footer:before {
 .page header {
     background: none;
 }
+.page header .item a img {
+    margin-top: 3px;
+    margin-left: 4px;
+}
+.page .header_top-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .checkbox label {
     display: inline-block;
     font-family: inherit;

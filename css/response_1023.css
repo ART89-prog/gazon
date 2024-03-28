@@ -92,6 +92,23 @@
     .step_banner-btn {
         font-size: 20px;
     }
+    .text-block .swiper-horizontal > .swiper-pagination-bullets, 
+    .text-block .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .text-block .swiper-pagination-custom, 
+    .text-block .swiper-pagination-fraction {
+        bottom: 20px;
+        right: 20px;
+    }
+    .callback_wrap {
+        flex-direction: column;
+    }
+    .callback_form {
+        width: 100%;
+    }
+    .callback_title {
+        font-size: 32px;
+    }
+    
 
 
    

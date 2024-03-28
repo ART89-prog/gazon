@@ -31,7 +31,7 @@ $(() => {
 
   let header = $('header');
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 150) {
+    if ($(this).scrollTop() > 20) {
       header.addClass('header_fixed');
     } else {
       header.removeClass('header_fixed');
@@ -45,7 +45,7 @@ $(() => {
     let id = $(this).attr("href");
 
     $("html, body").animate({
-      scrollTop: $(id).offset().top
+      scrollTop: $(id).offset().top - 80
     }, {
       duration: 400,
       easing: "swing"
@@ -98,22 +98,6 @@ $(() => {
 
 
   $('input[type=tel]').inputmask('+7 (999) 999-99-99')
-
-
-
-  // Скрол к пунктам меню
-  $(".scroll").on("click", function (e) {
-    e.preventDefault();
-    let id = $(this).attr("href");
-
-    $("html, body").animate({
-      scrollTop: $(id).offset().top - 50
-    }, {
-      duration: 1500,
-      easing: "swing"
-    });
-  });
-
 
 
 

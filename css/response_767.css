@@ -190,6 +190,45 @@
     .contacts_info-logo span b {
         font-size: 20px;
     }
+    footer:before {
+        display: none;
+    }
+    footer {
+        margin-top: 0;
+    }
+    .contacts.block {
+        padding-bottom: 0;
+    }
+    .text-block_title {
+        margin-bottom: 24px;
+    }
+    .callback_img {
+        width: 100%;
+        height: auto;
+    }
+    .callback_title {
+        font-size: 28px;
+    }
+    .text-block img {
+        float: none;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .text-block_btn .icon {
+        margin-left: 3px;
+        margin-bottom: 0;
+    }
+    .text-block_btn {
+        font-size: 20px;
+    }
+    .text-block .swiper-slide img {
+        margin-bottom: 0;
+    }
+    .text-block_title {
+        font-size: 32px;
+    }
 
 
 

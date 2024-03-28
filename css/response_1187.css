@@ -115,6 +115,26 @@
     .quote_btn {
         right: 31px;
     }
+    .page header .item a img {
+        display: none;
+    }
+    .text-block {
+        margin-top: 50px;
+    }
+    .text-block img {
+        width: 50%;
+        height: auto;
+    }
+    .callback_img {
+        width: 530px;
+        height: 380px;
+    }
+    .callback_form {
+        width: calc(100% - 550px);
+    }
+    .callback_wrap {
+        gap: 20px;
+    }
 
    
 
