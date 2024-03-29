@@ -123,6 +123,7 @@ input[type=number]
 -------------------*/
 :root {
     --bg: #fff;
+    --bg2: #0B9A0B;
     --scroll_width: 17px;
     --text_color: #202020;
     --font_size: 20px;
@@ -327,7 +328,6 @@ header .mob_menu_btn {
     padding: 27px 0;
     top: 0;
     width: 100%;
-    /* max-width: calc(100% - 40px); */
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
@@ -345,10 +345,16 @@ header .mob_menu_btn {
     z-index: -1;
 }
 .header_fixed .header_top {
-    background: rgba(0, 133, 0);
+    background: #008500;
 }
 .header_fixed .header_top:before {
-    background: rgba(0, 133, 0);
+    background: #008500;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.5);
+}
+.page .header_top,
+.page .header_top:before {
+    background: var(--bg2);
 }
 header .menu .item {
     margin-left: 30px;
@@ -522,7 +528,7 @@ header .menu .item > a {
     flex-shrink: 0;
 }  
 .header_btn:hover {
-    background: #0B9A0B;
+    background:  var(--bg2);
     color: #fff;
 }
 .header_bottom {
@@ -795,7 +801,7 @@ header .menu .item > a {
     margin-top: 30px;
     padding: 27px 72px;
     border-radius: 12px;
-    background:#0B9A0B;
+    background: var(--bg2);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -952,7 +958,7 @@ header .menu .item > a {
     width: 64px;
     height: 64px;
     border-radius: 8px;
-    background:#0B9A0B;
+    background: var(--bg2);
     display: flex;
     align-items: center;
     justify-content: center;    
@@ -996,7 +1002,7 @@ header .menu .item > a {
     z-index: 1;
     max-width: 482px;
     width: 100%;
-    background: #0B9A0B;
+    background:  var(--bg2);
     border-radius: 12px;
     padding: 24px;
     left: 24px;
@@ -1211,7 +1217,7 @@ footer:before {
 .custom-checkbox + label:before {
     width: 24px;
     height: 24px;
-    border: 1px solid #0B9A0B;
+    border: 1px solid  var(--bg2);
     border-radius: 4px;
     content: "";
     position: absolute;
@@ -1220,8 +1226,8 @@ footer:before {
     background: #fff;
 }
 .custom-checkbox:checked + label:after {
-    border-bottom: 3px solid #0B9A0B;
-    border-left: 3px solid #0B9A0B;
+    border-bottom: 3px solid  var(--bg2);
+    border-left: 3px solid  var(--bg2);
     width: 14px;
     height: 8px;
     content: "";
@@ -1316,7 +1322,7 @@ footer:before {
     padding: 16px 28px;
     width: 245px;
     height: 61px;
-    background: #0B9A0B;
+    background:  var(--bg2);
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
     font-weight: 600;
@@ -1341,7 +1347,7 @@ footer:before {
 .callback_wrap {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 50px;
 }
 .callback_form {
     width: calc(100% - 800px);
@@ -1350,7 +1356,7 @@ footer:before {
     font-weight: 800;
     font-size: 40px;
     line-height: 120%;
-    color: #0B9A0B;
+    color:  var(--bg2);
     margin-bottom: 8px;
 }
 .callback_text {
@@ -1440,7 +1446,7 @@ footer:before {
 .callback button {
     width: 100%;
     height: 69px;
-    background: #0B9A0B;
+    background:  var(--bg2);
     border-radius: 6px;
     font-family: var(--font_family);
     font-weight: 700;
