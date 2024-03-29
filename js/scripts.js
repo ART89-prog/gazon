@@ -97,7 +97,17 @@ $(() => {
 
 
 
-  $('input[type=tel]').inputmask('+7 (999) 999-99-99')
+  	// Phone input mask
+	const phoneInputs = document.querySelectorAll('input[type=tel]')
+
+	if (phoneInputs) {
+		phoneInputs.forEach(el => {
+			IMask(el, {
+				mask: '+{7} (000) 000-00-00',
+				lazy: true
+			})
+		})
+	}
 
 
 

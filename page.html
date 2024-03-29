@@ -166,7 +166,7 @@
 								</form>
 							</div>
 							<div class="callback_img">
-								<img data-src="images/form_img.jpg" alt="" class="lozad">
+								<img src="images/form_img.jpg" alt="" loading="lazy">
 							</div>
 						</div>
 					</div>
@@ -215,42 +215,13 @@
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
-		<script src="js/fancybox.min.js"></script>
-		<script src="js/inputmask.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/imask.js"></script>
 		<script src="js/lozad.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 
 
-		<script src="https://api-maps.yandex.ru/2.1.75/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
-		<script>
-			$(window).on('load', () => {
-				ymaps.ready(() => {
-					let myMap = new ymaps.Map('map', {
-						center: [55.709591,37.624867],
-						zoom: 16,
-						controls: []
-					})
-							
-					// Кастомный маркер
-					let myPlacemark = new ymaps.Placemark([55.709591,37.624867], {}, {
-						iconLayout : 'default#image',
-						// iconImageHref : 'images/marker.svg',
-						iconImageSize : [43, 50],
-					})
-	
-					myMap.geoObjects.add(myPlacemark)
-	
-					myMap.controls.add('zoomControl', {
-						position : {
-							right : '20px',
-							top   : '20px'
-						}
-					})
-					myMap.behaviors.disable('scrollZoom')
-				})
-			})
-		</script>
-
+		
 	</body>
 </html>
