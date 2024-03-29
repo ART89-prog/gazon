@@ -771,12 +771,9 @@ header .menu .item > a {
     background: rgb(255, 255, 255);
     width: calc(100%/4 - 10px);
 }
-.step_item-img {
-    height: 260px;
-}
 .step_item-img  img {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 318/260;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -832,9 +829,6 @@ header .menu .item > a {
 
 
 
-.watery_img {
-    height: 500px;
-}
 .watery_img img {
     width: 100%;
     height: 100%;
