@@ -201,7 +201,7 @@ button {
     overflow: hidden;
     flex-direction: column;
 
-    min-width: 360px;
+    min-width: 375px;
     min-height: 100%;
 
     background: var(--bg);
@@ -420,7 +420,6 @@ header .menu .item > a {
 }
 .header_contacts-email {
     color: rgb(255, 255, 255);
-    font-family: "Unbounded";
     font-size: 16px;
     font-weight: 700;
     line-height: 1.2;
@@ -444,7 +443,6 @@ header .menu .item > a {
 }
 .header_contacts-phone {
     color: rgb(255, 255, 255);
-    font-family: "Unbounded";
     font-size: 29px;
     font-weight: 700;
     line-height: 1.2;
@@ -565,14 +563,15 @@ header .menu .item > a {
 .product_item:nth-child(7) {
     width: calc(100%/3 - 20px);
 }
-.product_item-img {
-    height: 260px;
-}
 .product_item-img img {
     width: 100%;
-    height: 100%;
     border-radius: 12px;
-    object-fit: cover;
+    aspect-ratio: 657/260;
+}
+.product_item:nth-child(5) .product_item-img img,
+.product_item:nth-child(6) .product_item-img img, 
+.product_item:nth-child(7) .product_item-img img {
+    aspect-ratio: 412/260;
 }
 .product_item-title {
     color: rgb(32, 32, 32);
@@ -643,7 +642,7 @@ header .menu .item > a {
     color: rgb(255, 255, 255);
     font-size: var(--font_size_title);
     font-weight: 600;
-    line-height: 1.3;
+    line-height: 1.042;
     margin-bottom: 48px;
 }
 .banner_btn {
@@ -893,7 +892,6 @@ header .menu .item > a {
 .quote_btn:hover {
     color: rgb(107, 106, 106);
 }
-
 
 
 /* work */
@@ -1275,7 +1273,7 @@ footer:before {
 .text-block .swiper {
     margin-bottom: 36px;
 }
-.text-block h3 {
+.text-block h2 {
     font-size: var(--font_size_title);
     margin-bottom: 24px;
     line-height: 1.2;
