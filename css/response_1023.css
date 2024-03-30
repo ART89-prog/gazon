@@ -111,6 +111,9 @@
     .work .swiper-slide img + img {
         margin-top: 20px;
     }
+    footer:before {
+        display: none;
+    }
 
 
    

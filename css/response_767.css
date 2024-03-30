@@ -196,9 +196,6 @@
     .contacts_info-logo span b {
         font-size: 20px;
     }
-    footer:before {
-        display: none;
-    }
     footer {
         margin-top: 0;
     }
