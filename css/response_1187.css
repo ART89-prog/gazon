@@ -90,7 +90,7 @@
     .modal {
         padding: 40px;
     }
-    .fancybox__content>.carousel__button.is-close {
+    .is-compact .fancybox__content>.f-button.is-close-btn {
         top: 40px;
         right: 40px;
     }

@@ -1185,14 +1185,6 @@ footer:before {
 .modal_callback form button:hover {
     background-color: #92b0ab;
 }
-.fancybox__content>.carousel__button.is-close {
-    color: var(--fancybox-color, #a384a6);
-    top: 25px;
-    right: 25px;
-}
-.fancybox__content>.carousel__button.is-close:hover {
-    color: var(--fancybox-color, #92b0ab);
-}
 
 .page header {
     background: none;
@@ -1577,10 +1569,6 @@ footer:before {
     font-weight: 600;
     line-height: 24px;
 }
-.fancybox__content>.carousel__button.is-close {
-    top: 60px;
-    right: 80px;
-}
 .modal_img {
     width: 289px;
     height: 435px;
@@ -1591,4 +1579,21 @@ footer:before {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.f-button.is-close-btn {
+    background: url(../images/close.png);
+    width: 60px;
+    height: 60px;
+}
+.is-compact .fancybox__content>.f-button.is-close-btn {
+    top: 60px;
+    right: 80px;
+}
+.modal .f-button svg {
+    display: none;
+}
+.f-button:hover:not([disabled]) {
+    color: var(--f-button-hover-color);
+    background-color: transparent;
 }
