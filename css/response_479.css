@@ -88,6 +88,9 @@
     .callback_text {
         font-size: 16px;
     }
+    .contacts .map_wrap {
+        height: 390px;        
+    }
 
 
     
